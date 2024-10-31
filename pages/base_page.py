@@ -1,11 +1,11 @@
 import math
-from typing import Any
 
 from selenium.common.exceptions import (NoSuchElementException,
                                         TimeoutException,
                                         NoAlertPresentException)
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+from typing import Any
 
 from .locators import BasePageLocators
 

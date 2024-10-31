@@ -1,11 +1,8 @@
-from typing import Any
-
 import pytest
-
 from selenium import webdriver
-
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from typing import Any
 
 
 def pytest_addoption(parser: Any) -> None:

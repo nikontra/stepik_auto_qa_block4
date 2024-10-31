@@ -1,13 +1,12 @@
-from typing import Any, Tuple
-
-import pytest
 import time
 
+import pytest
+from typing import Any, Tuple
+
+from .pages.basket_page import BasketPage
 from .pages.login_page import LoginPage
 from .pages.main_page import MainPage
 from .pages.product_page import ProductPage
-from .pages.basket_page import BasketPage
-
 
 LINK_MAIN: str = "http://selenium1py.pythonanywhere.com/"
 LINK_PRODUCT: str = ("http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/")
@@ -150,6 +149,7 @@ def test_guest_cant_see_product_in_basket_opened_from_product_page(
     basket_page.should_be_basket_page()
 
 
+@pytest.mark.new
 class TestUserAddToBasketFromProductPage:
     """Класс содержащий методы тестирования авторизованного пользователя"""
 
